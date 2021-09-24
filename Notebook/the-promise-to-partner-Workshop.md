@@ -147,10 +147,14 @@ Text+,NFDI4Earth
 Text+,NFDI4Ing
 ")
 ```
+```R
+head(NFDI_edges)
+```
 
 So that we can create a network from this dataset,
 we have to prepare it and create a `igraph graph`.[^3]
 This is done with the function `graph_from_data_frame`, to which we pass our dataset.
+
 
 We also specify that our dataset or network is undirected
 (`directed=FALSE`), that means that the direction as specified by `from,to` in the dataset
